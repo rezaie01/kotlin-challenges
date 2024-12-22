@@ -8,7 +8,6 @@ build/
 
 tmp/
 .DS_Store
-.gitattributes
 
 # Ignore Vscode and Studio configs
 .vscode/
