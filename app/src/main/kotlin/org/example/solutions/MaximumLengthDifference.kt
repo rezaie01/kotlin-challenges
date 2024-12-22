@@ -15,7 +15,7 @@ val EXERCISE_NAME = "Maximum Length Difference"
     If a1 and/or a2 are empty return -1 in each language except in Haskell (F#) where you will
     return Nothing (None).
 */
-public class MaximumLengthDifference {
+class MaximumLengthDifference {
 
     private fun mxdiflg(a1: Array<String>, a2: Array<String>): Int {
         if (a1.size == 0 || a2.size == 0) return -1
@@ -33,7 +33,7 @@ public class MaximumLengthDifference {
     }
 
     // @Test
-    public fun test() {
+    fun test() {
 
         var s1 = arrayOf<String>(
                         "hoqq")
