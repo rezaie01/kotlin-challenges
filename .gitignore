@@ -12,3 +12,5 @@ tmp/
 # Ignore Vscode and Studio configs
 .vscode/
 .idea/
+
+.kotlin/
