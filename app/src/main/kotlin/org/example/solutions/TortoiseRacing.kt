@@ -42,7 +42,7 @@ class TortoiseRacing {
         val minutes = time / 60
         time %= 60
 
-        val seconds = time;
+        val seconds = time
 
         return intArrayOf(hours, minutes, seconds)
     }
