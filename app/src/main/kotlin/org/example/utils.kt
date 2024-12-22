@@ -13,3 +13,23 @@ fun assertEquals(expected: Any?, actual: Any?, message: String? = null) {
         throw AssertionError(errorMessage)
     }
 }
+
+fun assertArrayEquals(expected: IntArray, actual: IntArray) {
+    if (expected.size != actual.size) {
+        throw AssertionError("Arrays have different sizes. Expected size: ${expected.size}, Actual size: ${actual.size}")
+    }
+
+    for (i in expected.indices) {
+        if (expected[i] != actual[i]) throw AssertionError("Arrays differ at index ${i}. Expected: ${expected[i]}, but was: ${actual[i]}")
+    }
+}
+
+fun <T> assertArrayEquals(expected: Array<T>, actual: Array<T>) {
+    if (expected.size != actual.size) {
+        throw AssertionError("Arrays have different sizes. Expected size: ${expected.size}, Actual size: ${actual.size}")
+    }
+
+    for (i in expected.indices) {
+        if (expected[i] != actual[i]) throw AssertionError("Arrays differ at index ${i}. Expected: ${expected[i]}, but was: ${actual[i]}")
+    }
+}
