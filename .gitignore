@@ -10,5 +10,5 @@ tmp/
 .gitattributes
 
 # Ignore Vscode and Studio configs
-.vscode
-.idea
+.vscode/
+.idea/
