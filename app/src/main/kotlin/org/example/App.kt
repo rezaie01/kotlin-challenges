@@ -1,6 +1,8 @@
 package org.example
 
-import org.example.solutions.CreditCardMask
+import org.example.solutions.TortoiseRacing
+
+//import org.example.solutions.CreditCardMask
 //import org.example.solutions.MultipleOf3Or5
 
 fun main() {
@@ -8,7 +10,8 @@ fun main() {
 
     // MaximumLengthDifference().test()
 
-//    MultipleOf3Or5().test()
-    CreditCardMask().test()
+    //    MultipleOf3Or5().test()
+    //    CreditCardMask().test()
+    TortoiseRacing().test()
 }
     
