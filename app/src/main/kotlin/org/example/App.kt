@@ -7,6 +7,7 @@ import org.example.solutions.ReducingBySteps
 import org.example.solutions.ReverseOrRotate
 import org.example.solutions.SmallCodeInterpreter
 import org.example.solutions.TortoiseRacing
+import org.example.solutions.ZonkTests
 import org.example.solutions.bracketMatcher
 
 //import org.example.solutions.CreditCardMask
@@ -63,8 +64,12 @@ fun main() {
 //
 //
 
-    val tester = PaginationHelperTest()
-    tester.testItemCount()
-    tester.testPageCount()
-    tester.testPageItemsCountAtNthPage()
+//    val tester = PaginationHelperTest()
+//    tester.testItemCount()
+//    tester.testPageCount()
+//    tester.testPageItemsCountAtNthPage()
+
+    val zonkGameTester = ZonkTests()
+    zonkGameTester.test1()
+    zonkGameTester.test2()
 }
