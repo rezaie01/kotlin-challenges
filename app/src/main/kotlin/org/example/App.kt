@@ -1,6 +1,7 @@
 package org.example
 
 import org.example.solutions.EncodeRoman
+import org.example.solutions.PaginationHelperTest
 import org.example.solutions.PrimesInNumbers
 import org.example.solutions.ReducingBySteps
 import org.example.solutions.ReverseOrRotate
@@ -50,13 +51,20 @@ fun main() {
 //    roman.test()
 //    println(roman.encode(340))
 
-    val p = PrimesInNumbers()
-    println(p.factors(90))
-    println(p.factors(7775460))
-    println(p.factors(9))
-    println(p.factors(2))
-    println(p.factors(7))
-    println(p.factors(175))
-    println(p.factors(155))
-    println(p.factors(Int.MAX_VALUE - 2))
+//    val p = PrimesInNumbers()
+//    println(p.factors(90))
+//    println(p.factors(7775460))
+//    println(p.factors(9))
+//    println(p.factors(2))
+//    println(p.factors(7))
+//    println(p.factors(175))
+//    println(p.factors(155))
+//    println(p.factors(Int.MAX_VALUE - 2))
+//
+//
+
+    val tester = PaginationHelperTest()
+    tester.testItemCount()
+    tester.testPageCount()
+    tester.testPageItemsCountAtNthPage()
 }
