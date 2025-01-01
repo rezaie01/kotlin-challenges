@@ -1,14 +1,6 @@
 package org.example
 
-import org.example.solutions.EncodeRoman
-import org.example.solutions.PaginationHelperTest
-import org.example.solutions.PrimesInNumbers
-import org.example.solutions.ReducingBySteps
-import org.example.solutions.ReverseOrRotate
-import org.example.solutions.SmallCodeInterpreter
-import org.example.solutions.TortoiseRacing
-import org.example.solutions.ZonkTests
-import org.example.solutions.bracketMatcher
+import org.example.solutions.TestTheObservedPIN
 
 //import org.example.solutions.CreditCardMask
 //import org.example.solutions.MultipleOf3Or5
@@ -69,7 +61,12 @@ fun main() {
 //    tester.testPageCount()
 //    tester.testPageItemsCountAtNthPage()
 
-    val zonkGameTester = ZonkTests()
-    zonkGameTester.test1()
-    zonkGameTester.test2()
+//    val zonkGameTester = ZonkTests()
+//    zonkGameTester.test1()
+//    zonkGameTester.test2()
+
+//    TestDiophantineEquation().test()
+//    TestRangeExtraction().test()
+    TestTheObservedPIN().testPINGenerator()
+    TestTheObservedPIN().test()
 }
