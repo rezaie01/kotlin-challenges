@@ -1,6 +1,7 @@
 package org.example
 
-import org.example.solutions.TestTheObservedPIN
+import org.example.solutions.TestSmallestPossibleSum
+//import org.example.solutions.TestTheObservedPIN
 
 //import org.example.solutions.CreditCardMask
 //import org.example.solutions.MultipleOf3Or5
@@ -67,6 +68,12 @@ fun main() {
 
 //    TestDiophantineEquation().test()
 //    TestRangeExtraction().test()
-    TestTheObservedPIN().testPINGenerator()
-    TestTheObservedPIN().test()
+//    TestTheObservedPIN().testPINGenerator()
+//    TestTheObservedPIN().test()
+
+    val tester = TestSmallestPossibleSum(withGCD = false)
+    tester.basicTest()
+    tester.testWithDirectionChange()
+    tester.testGCD()
+    TestSmallestPossibleSum().testPrevIndex()
 }
