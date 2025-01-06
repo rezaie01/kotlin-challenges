@@ -1,6 +1,9 @@
 package org.example
 
-import org.example.solutions.TestSmallestPossibleSum
+import org.example.solutions.TestSumByFactors
+//import org.example.solutions.SumByFactors
+//import org.example.solutions.TestSmallestPossibleSum
+
 //import org.example.solutions.TestTheObservedPIN
 
 //import org.example.solutions.CreditCardMask
@@ -71,9 +74,15 @@ fun main() {
 //    TestTheObservedPIN().testPINGenerator()
 //    TestTheObservedPIN().test()
 
-    val tester = TestSmallestPossibleSum(withGCD = false)
-    tester.basicTest()
-    tester.testWithDirectionChange()
-    tester.testGCD()
-    TestSmallestPossibleSum().testPrevIndex()
+//    val tester = TestSmallestPossibleSum(withGCD = false)
+//    tester.basicTest()
+//    tester.testWithDirectionChange()
+//    tester.testGCD()
+//    TestSmallestPossibleSum().testPrevIndex()
+
+  TestSumByFactors().testOne()
+  TestSumByFactors().testTwo()
+  TestSumByFactors().testThree()
+  TestSumByFactors().testFour()
+  TestSumByFactors().testFive()
 }
