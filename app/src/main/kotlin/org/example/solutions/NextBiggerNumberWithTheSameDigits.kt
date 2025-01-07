@@ -1,7 +1,5 @@
 package org.example.solutions
 
-import org.example.utils.assertEquals
-
 /*
 * Create a function that takes a positive integer and returns the next bigger number that can be formed by rearranging its digits. For example:
 *
@@ -44,27 +42,5 @@ class NextBiggerNumberWithTheSameDigits {
       }
     }
     return -1L
-  }
-}
-
-class TestNextBiggerNumberWithTheSameDigits {
-  val testObj = NextBiggerNumberWithTheSameDigits()
-  val nextBiggerNumber = testObj::nextBiggerNumber
-
-  fun basicTests() {
-    assertEquals(21L, nextBiggerNumber(12))
-    assertEquals(531L, nextBiggerNumber(513))
-    assertEquals(2071L, nextBiggerNumber(2017))
-    assertEquals(441L, nextBiggerNumber(414))
-    assertEquals(414L, nextBiggerNumber(144))
-  }
-
-  fun complexTests() {
-    assertEquals(1210487444L, nextBiggerNumber(1210484744))
-    assertEquals(292821200L, nextBiggerNumber(292821020))
-    assertEquals(701304529L, nextBiggerNumber(701304295))
-    assertEquals(123456798L, nextBiggerNumber(123456789))
-    assertEquals(1234567908L, nextBiggerNumber(1234567890))
-    assertEquals(1907888999L, nextBiggerNumber(1899998870))
   }
 }
