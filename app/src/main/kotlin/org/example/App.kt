@@ -1,6 +1,8 @@
 package org.example
 
-import org.example.solutions.TestSumByFactors
+import org.example.solutions.TestNextBiggerNumberWithTheSameDigits
+
+//import org.example.solutions.TestSumByFactors
 //import org.example.solutions.SumByFactors
 //import org.example.solutions.TestSmallestPossibleSum
 
@@ -80,9 +82,12 @@ fun main() {
 //    tester.testGCD()
 //    TestSmallestPossibleSum().testPrevIndex()
 
-  TestSumByFactors().testOne()
-  TestSumByFactors().testTwo()
-  TestSumByFactors().testThree()
-  TestSumByFactors().testFour()
-  TestSumByFactors().testFive()
+//  TestSumByFactors().testOne()
+//  TestSumByFactors().testTwo()
+//  TestSumByFactors().testThree()
+//  TestSumByFactors().testFour()
+//  TestSumByFactors().testFive()
+
+  TestNextBiggerNumberWithTheSameDigits().basicTests()
+  TestNextBiggerNumberWithTheSameDigits().complexTests()
 }
