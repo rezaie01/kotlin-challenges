@@ -1,7 +1,5 @@
 package org.example.solutions
 
-import org.example.utils.assertEquals
-
 class EncodeRoman {
     fun encode(num: Int): String {
         return ("M".repeat(num / 1000)) + putSymbol(
@@ -21,12 +19,5 @@ class EncodeRoman {
     } else {
         md + sm.repeat((num % 5))
     }
-
-    fun test() {
-        assertEquals("", encode(0))
-        assertEquals("I", encode(1))
-        assertEquals("XXI", encode(21))
-        assertEquals("MMVIII", encode(2008))
-        assertEquals("MDCLXVI", encode(1666))
-    }
+    
 }

@@ -22,27 +22,20 @@ times, and then take 3, which leads to [1,2,3,1,2,3].
 With list [20,37,20,21] and number 1, the result would be [20,37,21].
 */
 
-private fun deleteNth(elements: IntArray, n: Int): IntArray {
-    val countMap: MutableMap<Int, Int> = mutableMapOf()
-    val newElements: MutableList<Int> = mutableListOf()
-    for (element in elements) {
-        val count = countMap.getOrDefault(element, 0) + 1
-        if (count > n) {
-            continue
-        }
-        countMap.put(element, count)
-        newElements.add(element)
-    }
-
-    return newElements.toIntArray()
+class EnoughIsEnough {
+	fun deleteNth(elements: IntArray, n: Int): IntArray {
+		val countMap: MutableMap<Int, Int> = mutableMapOf()
+		val newElements: MutableList<Int> = mutableListOf()
+		for (element in elements) {
+			val count = countMap.getOrDefault(element, 0) + 1
+			if (count > n) {
+				continue
+			}
+			countMap[element] = count
+			newElements.add(element)
+		}
+		
+		return newElements.toIntArray()
+	}
 }
 
-fun TestEnoughIsEnough() {
-    val myList = intArrayOf(1, 2, 1, 3, 1, 10, 1, 2, 12, 10, 2, 2, 3)
-
-    val result = deleteNth(myList, 3)
-
-    result.forEach { println(it) }
-
-
-}

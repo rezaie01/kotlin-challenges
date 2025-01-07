@@ -14,7 +14,6 @@ package org.example.solutions
 * */
 class LongestConsecutiveRep {
     fun longestRepetition(s: String): Pair<Char?, Int> {
-        val counts = linkedMapOf<Char, Int>()
 
         // store the current consecutive repetition
         var currentRep = 0
