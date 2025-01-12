@@ -23,7 +23,8 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 
     // Use the JUnit 5 integration.
-    testImplementation(libs.junit.jupiter.engine)
+//    testImplementation(libs.junit.jupiter.engine)
+//    testImplementation(libs.junit.jupiter)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
